@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "subtext": {
+      "url": "https://youtubevideototranscript.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${env:SUBTEXT_API_KEY}"
+      }
+    }
+  }
+}
