@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.youtubevideototranscript/youtube-transcript",
   "title": "Subtext: YouTube transcripts",
-  "description": "Get the transcript of any YouTube video as text, Markdown, SRT, WebVTT or JSON.",
-  "version": "1.0.0",
+  "description": "Fetch public YouTube transcripts as text, Markdown, SRT, WebVTT or JSON via OAuth or API key.",
+  "version": "1.0.1",
   "websiteUrl": "https://youtubevideototranscript.com/api",
   "repository": {
     "url": "https://github.com/vsaranyuk/youtube-transcript-mcp",
@@ -16,14 +16,14 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "API key sent as a Bearer token. Create a free key at https://youtubevideototranscript.com/account",
-          "isRequired": true,
+          "description": "Optional Bearer API key for clients without OAuth 2.1. Create a free key (100 credits) at https://youtubevideototranscript.com/account",
+          "isRequired": false,
           "isSecret": true,
           "value": "Bearer {api_key}",
           "variables": {
             "api_key": {
               "description": "Your Subtext API key (starts with stx_).",
-              "isRequired": true,
+              "isRequired": false,
               "isSecret": true
             }
           }

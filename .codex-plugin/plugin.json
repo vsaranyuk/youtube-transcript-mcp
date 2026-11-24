@@ -1,0 +1,31 @@
+{
+  "name": "youtube-transcript-mcp",
+  "version": "1.0.1",
+  "description": "Remote YouTube Transcript MCP server (Streamable HTTP + OAuth 2.1) and Agent Skill powered by Subtext.",
+  "author": {
+    "name": "Subtext",
+    "url": "https://youtubevideototranscript.com"
+  },
+  "homepage": "https://youtubevideototranscript.com/api",
+  "repository": "https://github.com/vsaranyuk/youtube-transcript-mcp",
+  "license": "MIT",
+  "keywords": [
+    "youtube",
+    "transcript",
+    "captions",
+    "subtitles",
+    "mcp",
+    "streamable-http",
+    "oauth",
+    "agent-skills"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Subtext — YouTube Transcripts",
+    "shortDescription": "Read public YouTube transcripts in text, Markdown, SRT, WebVTT, or JSON without local setup or IP blocks.",
+    "longDescription": "Connect Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, or Hermes to public YouTube captions via Subtext's hosted Streamable HTTP MCP server (OAuth 2.1 or API key) or portable Agent Skill. Free starter credits (100 on web sign-up, 25 via agent email code, no credit card). Subtext is an independent tool not affiliated with YouTube or Google.",
+    "developerName": "Subtext",
+    "category": "Productivity",
+    "capabilities": ["Read"]
+  }
+}
